@@ -1,27 +1,35 @@
 
-'''Demonstrate the use of following built-in-functions in python:
-abs(), len(), min(), round(), isalnum(), type()'''
-
-# The abs() function returns the absolute value of a number.
-print(abs(-10))
-
-#the len() function returns the length of a string or a sequence.
-print(len("Welcome to MIET!"))
-
-#The min() function returns the minimum value of a function.
-print(min([10,20,30]))
-
-#The round() function rounds a number to a specified number of decimal places.
-print(round(3.15422,2))
-
-#The isanum() returns True if a string contains only alphanumeric characters, False otherwise.
-print("CSE, 3rd sem ".isalnum())
-print("123abc".isalnum())
-
-#The type() function returns the type of an object.
-print(type(10))
-print(type("AI and, ML!"))
-
+d = {'key1': 1, 'key2': 2, 'key3': 3}
+for k in d:
+    print(k)
+print(list(d))
+print(type(list(d)))
+while(1):
+    print('********DICTIONARY ITERATION*********')
+    print('1.Through Dictionary keys()')
+    print('2.Through Dictionary values()')
+    print('3.Through Dictionary items()')
+    print('4.Exit')
+    c=int(input('Enter Your Choice'))
+    if(c==1):
+        for k in d.keys():
+            print(k)
+        print(d.keys())
+        print(type(d.keys()))
+        print(list(d.keys()))
+        print(type(list(d.keys())))
+    elif(c==2):
+        for v in d.values():
+            print(v)
+        print(d.values())
+        print(type(d.values()))
+    elif(c==3):
+        for k, v in d.items():
+            print('Keys=',k, 'Values=',v)
+        print(d.items())
+        print(type(d.items()))
+    elif(c==4):
+        break
 
 
 
